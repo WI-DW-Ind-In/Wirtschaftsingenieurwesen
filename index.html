@@ -1,105 +1,102 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Klausuren Sammlung - Wirtschaftsingenieurwesen</title>
-    <style>
-        :root {
-            --primary: #0057b7;
-            --primary-dark: #0040a0;
-            --background: #eaf2fb;
-            --text: #1a1a1a;
-            --white: #ffffff;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Klausurensammlung - Wirtschaftsingenieurwesen</title>
+  <style>
+    :root {
+      --primary: rgba(0, 87, 183, 0.85);
+      --hover: rgba(0, 60, 140, 0.9);
+      --text: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.4);
+    }
 
-        * {
-            box-sizing: border-box;
-        }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background-color: var(--background);
-            color: var(--text);
-        }
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--text);
+    }
 
-        header {
-            background-color: var(--primary);
-            color: var(--white);
-            padding: 30px 20px;
-            text-align: center;
-        }
+    body {
+      background: url('https://www.eah-jena.de/fileadmin/user_upload/eah-jena.de/fachbereich/wi/Sites_Seiten/Pictures_Bilder/Main/Rueckseite_Haus_1-3_EAH_Jena_Banner_klelin.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-        header h1 {
-            font-size: 1.8em;
-            margin: 0;
-        }
+    .overlay {
+      background-color: var(--primary);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px var(--shadow);
+      max-width: 90%;
+      backdrop-filter: blur(6px);
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 30px 20px;
-            text-align: center;
-        }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
 
-        h2 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
+    p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
 
-        p {
-            font-size: 1.1em;
-            margin-bottom: 25px;
-        }
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 1.1em;
+      font-weight: bold;
+      color: var(--text);
+      background-color: var(--primary);
+      border: 2px solid white;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
 
-        .button {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 15px 10px;
-            font-size: 1.2em;
-            font-weight: bold;
-            color: var(--white);
-            background-color: var(--primary);
-            border: none;
-            border-radius: 10px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
+    .button:hover {
+      background-color: var(--hover);
+    }
 
-        .button:hover {
-            background-color: var(--primary-dark);
-        }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5em;
+      }
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.4em;
-            }
+      .button {
+        width: 100%;
+        font-size: 1em;
+      }
 
-            h2 {
-                font-size: 1.2em;
-            }
-
-            .button {
-                width: 100%;
-                font-size: 1.1em;
-            }
-        }
-    </style>
+      .overlay {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-
-    <header>
-        <h1>Klausuren Sammlung<br>Wirtschaftsingenieurwesen</h1>
-    </header>
-
-    <div class="container">
-        <h2>Hilf mit und lade alte Klausuren hoch – anonym und unkompliziert!</h2>
-        <p>Alle Studierenden profitieren davon. Danke für deinen Beitrag!</p>
-
-        <a href="https://forms.gle/nXe6NDybFSRjXB86A" target="_blank" class="button">📤 Klausur hochladen</a>
-        <a href="https://drive.google.com/drive/folders/152jR-9wM0ixHAYFvL3_-HRLj5OoGyTuI?usp=drive_link" target="_blank" class="button">📁 Klausuren ansehen</a>
-    </div>
-
+  <div class="overlay">
+    <h1>📚 Klausurensammlung<br>Wirtschaftsingenieurwesen</h1>
+    <p>Hilf mit und lade alte Klausuren anonym hoch! So helfen wir uns gegenseitig.</p>
+    <a href="https://forms.gle/nXe6NDybFSRjXB86A" target="_blank" class="button">📤 Klausur hochladen</a>
+    <a href="https://drive.google.com/drive/folders/152jR-9wM0ixHAYFvL3_-HRLj5OoGyTuI?usp=drive_link" target="_blank" class="button">📁 Klausuren ansehen</a>
+  </div>
 </body>
 </html>
+
+    
+}
